@@ -5,7 +5,7 @@ import { createApp } from './app'
 // 通过webpack打包后就可以用该函数创建 App 组件
 /**
  * 
- * @param { Object } context 上下文对象，包含q
+ * @param { Object } context 上下文对象，包含url
  * @returns 
  */
 export default function (context) {
