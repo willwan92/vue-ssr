@@ -1,6 +1,9 @@
 import Vue from 'vue'
+import VueRouter from 'vue-router'
 import { createRouter } from '../router/index'
 import App from '../App.vue'
+
+Vue.use(VueRouter)
 
 /**
  * 创建 App 组件
@@ -12,6 +15,6 @@ export function createApp() {
     render: h => h(App),
   })
 
-  // 同时返回 router，让服务端可以根据请求的 url 设置 router 的位置
+  // 同时返回 router，客户端和服务端入口文件需要使用
   return { app, router }
 }
